@@ -3,7 +3,7 @@
 }
 body {
     font-family: 'Sedan SC', sans-serif;
-    background-image: url(img/background.jpg);
+    background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -17,7 +17,7 @@ body {
     justify-content: center;
 }
 .cabecera__titulo {
-    background: linear-gradient(to top right,rgb(96, 34, 195), rgb(66, 6, 98));
+    background: linear-gradient(to top right,rgb(197, 254, 111), rgb(206, 245, 149));
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }
@@ -28,10 +28,17 @@ body {
     justify-content: space-around;
     gap: 1em;
 }
+
 .marcador {
+    color: rgb(203, 255, 125);
     width: 100%;
     display: flex;
     justify-content: space-around;
+}
+.marcador__p{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .tablero{
     background: rgb(32, 31, 34);
@@ -47,4 +54,21 @@ body {
 }
 .tablero__b {
     background: none;
+}
+.configuracion {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.configuracion__jugar {
+    border-radius: 0.6em;
+    background: rgb(203, 255, 125);
+    color: #340082;
+    border: 0px;
+}
+.configuracion__conf {
+    background: none;
+    border: none;
+    margin-bottom: 0.3em;
+    color: rgb(251, 251, 251);
 }
